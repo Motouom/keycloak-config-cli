@@ -11,6 +11,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - JavaScript variable substitution support in configuration files [#934](https://github.com/adorsys/keycloak-config-cli/issues/934)
 - Add support for Keycloak Workflows management
 
+### Security
+- Fix secrets leak in HTTP debug logs - passwords, tokens, and credentials are now sanitized when `LOGGING_LEVEL_HTTP=debug` is enabled [#1302](https://github.com/adorsys/keycloak-config-cli/issues/1302)
+
 ### Fixed
 - Fix issue where empty or null composite realm roles were not being cleared during import
 
